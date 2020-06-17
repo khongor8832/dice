@@ -105,6 +105,10 @@ document.querySelector(".btn-hold").addEventListener("click", function () {
 
         scores[activePlayer] = scores[activePlayer] + roundScore;
 
+        document.getElementById("score-" + activePlayer).textContent =
+            scores[activePlayer];
+
+
 
         // Уг тоглогч хожсон эсэхийг (оноо нь 100-с их эсэх) шалгах 
         if (scores[activePlayer] >= 100) {
